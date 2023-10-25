@@ -20,16 +20,53 @@
 #    misrepresented as being the original software.
 # 3. This notice may not be removed or altered from any source distribution.
 #############################################################################
+"""The DAQ module
+
+Contains the DAQ class, which serves as the entry point for the DAQ process.
+
+"""
 
 from etroc_daq2 import __version__
 
 class DAQ:
+    """Class to handle the DAQ
+
+    This is a temporary description
+
+    Parameters
+    ----------
+    param_name
+        A placeholder parameter name
+
+    Raises
+    ------
+    RuntimeError
+        For the errors that may be raised
+
+    Examples
+    --------
+    >>> import etroc_daq2
+    >>> daq = etroc_daq2.DAQ()
+    >>> daq.start()
+
+    """
+
     def __init__(self):
         pass
 
     @property
-    def version(self):
+    def version(self) -> str:
+        """The version property getter method
+
+        This method returns the version of the DAQ library
+
+        Returns
+        -------
+        str
+            The string of the version.
+        """
         return __version__
 
     def start(self):
+        """Start the DAQ"""
         pass
