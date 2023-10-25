@@ -33,6 +33,9 @@ The build tool is used to package the code for publishing on PyPI. Build the rel
 
 The twine tool is used to upload the package to PyPI. Once the distribution files are generated with the build tool, then upload them with: `python -m twine upload --repository testpypi dist/*`
 
+### Docstrings
+Please use docstrings in the "NumPy/SciPy docstrings" style: [link](https://numpydoc.readthedocs.io/en/latest/format.html).
+
 ### pyproject.toml
 Get classifiers from [here](https://pypi.org/classifiers/)
 
