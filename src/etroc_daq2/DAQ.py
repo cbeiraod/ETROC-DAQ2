@@ -21,10 +21,15 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #############################################################################
 
-from __future__ import annotations
+from etroc_daq2 import __version__
 
-from .DAQ import DAQ
+class DAQ:
+    def __init__(self):
+        pass
 
-__version__ = '0.0.0'
+    @property
+    def version(self):
+        return __version__
 
-__all__ = ["DAQ"]
+    def start(self):
+        pass
