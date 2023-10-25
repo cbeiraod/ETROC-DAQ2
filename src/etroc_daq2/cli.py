@@ -21,9 +21,9 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #############################################################################
 
-def main(args=None):
-    import argparse
+import argparse
 
+def main(args=None):
     parser = argparse.ArgumentParser(description='Run the ETROC DAQ++')
     # parser.add_argument('names', metavar='NAME', nargs=argparse.ZERO_OR_MORE,
     #                 help="A name of something.")
