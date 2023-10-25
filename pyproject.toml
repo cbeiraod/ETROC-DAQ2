@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ETROC-DAQ2"
+version = "0.0.0"
+authors = [
+  { name="Cristóvão Beirão da Cruz e Silva", email="cbeiraod@cern.ch" },
+]
+maintainers = [
+]
+description = "A new and improved DAQ for standalone ETROC testing"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: zlib/libpng License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Scientific/Engineering",
+]
+keywords = ["ETROC", "DAQ", "Awesome"]
+
+[project.urls]
+"Homepage" = "https://github.com/cbeiraod/ETROC-DAQ2"
+"Bug Tracker" = "https://github.com/cbeiraod/ETROC-DAQ2/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
