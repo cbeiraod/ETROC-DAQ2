@@ -20,10 +20,17 @@
 #    misrepresented as being the original software.
 # 3. This notice may not be removed or altered from any source distribution.
 #############################################################################
+"""The CLI module
+
+This is a utility module which serves as a wrapper for the DAQ module so it can be called from the command line
+CLI -> Command Line Interface
+
+"""
 
 import argparse
 
 def main(args=None):
+    """This is the main entry function for the command line interface"""
     parser = argparse.ArgumentParser(description='Run the ETROC DAQ++')
     # parser.add_argument('names', metavar='NAME', nargs=argparse.ZERO_OR_MORE,
     #                 help="A name of something.")
