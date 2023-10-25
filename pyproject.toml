@@ -11,7 +11,7 @@ authors = [
 maintainers = [
 ]
 description = "A new and improved DAQ for standalone ETROC testing"
-readme = "README.md"
+readme = "PyPIREADME.md"
 requires-python = ">=3.7"
 classifiers = [
     "Development Status :: 1 - Planning",
