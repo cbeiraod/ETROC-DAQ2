@@ -15,12 +15,15 @@ Make sure you activate the venv first, then install this application with all it
 ### Dev Dependencies
 If you are working on developing the code for ETROC-DAQ++ you will need to follow the "Running the Software" instructions for setup and then instead of the install command in the "Dependencies" instructions, use the following command: `pip install -e .`. Then install a few other dependencies which are only used in development:
 ```
+python -m pip install --upgrade pytest
 python -m pip install --upgrade bump2version
 python -m pip install --upgrade build
 python -m pip install --upgrade twine
 ```
 
 ## Dev Info
+We are using pytest to run unit tests on the software. See [here](https://docs.pytest.org/en/7.4.x/getting-started.html) for ideas on how to get started. Use the command `pytest` to run all the tests.
+
 We are using bump2version to manage the version string of the software. bump2version will automatically create a commit and a tag with the version when you use it:
   * To increase the major version, use: `bump2version major`; for example 0.1.3 to 1.0.0
   * To increase the minor version, use: `bump2version minor`; for example 0.1.3 to 0.2.0
