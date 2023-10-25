@@ -27,6 +27,9 @@ keywords = ["ETROC", "DAQ", "Awesome"]
 "Homepage" = "https://github.com/cbeiraod/ETROC-DAQ2"
 "Bug Tracker" = "https://github.com/cbeiraod/ETROC-DAQ2/issues"
 
+[project.scripts]
+run-etroc-daq2 = "etroc_daq2.cli:main"
+
 [tool.pytest.ini_options]
 addopts = [
     "--import-mode=importlib",

@@ -38,4 +38,6 @@ Get classifiers from [here](https://pypi.org/classifiers/)
 
 More information on packaging can be found [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 
-Consider adding an entry point as explained in: https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+There is an entry point as explained in: https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+This entry point is for running the DAQ.
+The entry point can be ran with the following command: `run-etroc-daq2`

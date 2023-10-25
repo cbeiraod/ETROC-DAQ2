@@ -21,10 +21,12 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #############################################################################
 
-from __future__ import annotations
+def main(args=None):
+    import argparse
 
-__version__ = '0.0.0'
+    parser = argparse.ArgumentParser(description='Run the ETROC DAQ++')
+    # parser.add_argument('names', metavar='NAME', nargs=argparse.ZERO_OR_MORE,
+    #                 help="A name of something.")
+    args = parser.parse_args(args=args)
 
-from .DAQ import DAQ
-
-__all__ = ["DAQ"]
+    print("This will eventually run the DAQ")
