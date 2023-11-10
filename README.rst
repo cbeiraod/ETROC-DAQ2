@@ -43,7 +43,7 @@ python -m pip install --upgrade twine
 ========
 Dev Info
 ========
-We are using pytest to run unit tests on the software. See [here](https://docs.pytest.org/en/7.4.x/getting-started.html) for ideas on how to get started. Use the command `pytest` to run all the tests.
+We are using pytest to run unit tests on the software. See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started. Use the command `pytest` to run all the tests.
 
 We are using bump2version to manage the version string of the software. bump2version will automatically create a commit and a tag with the version when you use it:
   * To increase the major version, use: `bump2version major`; for example 0.1.3 to 1.0.0
@@ -59,20 +59,20 @@ The twine tool is used to upload the package to PyPI. Once the distribution file
 -----------------
 Restructured Text
 -----------------
-For information on how to use restructured text, see the cheatsheet [here](https://github.com/DevDungeon/reStructuredText-Documentation-Reference) for example.
+For information on how to use restructured text, see the cheatsheet `here <https://github.com/DevDungeon/reStructuredText-Documentation-Reference>`_ for example.
 But there are other resources on the internet if you prefer.
 
 ----------
 Docstrings
 ----------
-Please use docstrings in the "NumPy/SciPy docstrings" style: [link](https://numpydoc.readthedocs.io/en/latest/format.html).
+Please use docstrings in the "NumPy/SciPy docstrings" style: `link <https://numpydoc.readthedocs.io/en/latest/format.html>`_.
 
 --------------
 pyproject.toml
 --------------
-Get classifiers from [here](https://pypi.org/classifiers/)
+Get classifiers from `here <https://pypi.org/classifiers/>`_.
 
-More information on packaging can be found [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+More information on packaging can be found `here <https://packaging.python.org/en/latest/tutorials/packaging-projects/>`_.
 
 There is an entry point as explained in: https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
 This entry point is for running the DAQ.
