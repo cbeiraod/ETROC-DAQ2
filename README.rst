@@ -2,6 +2,13 @@
 ETROC-DAQ++
 """""""""""
 
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+.. end-badges
+
 A new and improved DAQ for standalone ETROC testing
 
 * Free software: Zlib license
