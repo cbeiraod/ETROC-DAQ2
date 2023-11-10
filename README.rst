@@ -4,8 +4,10 @@ ETROC-DAQ++
 
 A new and improved DAQ for standalone ETROC testing
 
-.. contents:: Overview
+.. contents:: Contents
    :depth: 3
+
+* Free software: Zlib license
 
 ====================
 Running the software
