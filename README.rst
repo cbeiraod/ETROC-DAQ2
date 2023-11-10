@@ -37,7 +37,7 @@ Dev Dependencies
 If you are working on developing the code for ETROC-DAQ++ you will need to follow the "Running the Software" instructions for setup and then for installing use the "From Source" instructions but instead of the install command in the "Dependencies" instructions, use the following command: ``python -m pip install -e .``.
 Then install a few other dependencies which are only used in development:
 
-.. code:: bash
+.. code::
   python -m pip install --upgrade pytest
   python -m pip install --upgrade bump2version
   python -m pip install --upgrade pylint
