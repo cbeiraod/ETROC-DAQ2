@@ -35,29 +35,35 @@ Dev Dependencies
 ----------------
 If you are working on developing the code for ETROC-DAQ++ you will need to follow the "Running the Software" instructions for setup and then for installing use the "From Source" instructions but instead of the install command in the "Dependencies" instructions, use the following command: `python -m pip install -e .`.
 Then install a few other dependencies which are only used in development:
-```
-python -m pip install --upgrade pytest
-python -m pip install --upgrade bump2version
-python -m pip install --upgrade pylint
-python -m pip install --upgrade build
-python -m pip install --upgrade twine
-```
+.. code:: bash
+  python -m pip install --upgrade pytest
+  python -m pip install --upgrade bump2version
+  python -m pip install --upgrade pylint
+  python -m pip install --upgrade build
+  python -m pip install --upgrade twine
 
 ========
 Dev Info
 ========
-We are using pytest to run unit tests on the software. See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started. Use the command `pytest` to run all the tests.
+We are using pytest to run unit tests on the software.
+See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started.
+Use the command `pytest` to run all the tests.
 
-We are using bump2version to manage the version string of the software. bump2version will automatically create a commit and a tag with the version when you use it:
+We are using bump2version to manage the version string of the software.
+bump2version will automatically create a commit and a tag with the version when you use it:
   * To increase the major version, use: `bump2version major`; for example 0.1.3 to 1.0.0
   * To increase the minor version, use: `bump2version minor`; for example 0.1.3 to 0.2.0
   * To increase the patch version, use: `bump2version patch`; for example 0.1.3 to 0.1.4
 
-We are using pylint to check the style of python code. There is a github workflow which runs automatically on push, but you can also run it on your own with: `pylint [file]`. A useful command is `pylint src` which will check the full distribution.
+We are using pylint to check the style of python code.
+There is a github workflow which runs automatically on push, but you can also run it on your own with: `pylint [file]`.
+A useful command is `pylint src` which will check the full distribution.
 
-The build tool is used to package the code for publishing on PyPI. Build the release with: `python -m build`
+The build tool is used to package the code for publishing on PyPI.
+Build the release with: `python -m build`
 
-The twine tool is used to upload the package to PyPI. Once the distribution files are generated with the build tool, then upload them with: `python -m twine upload --repository testpypi dist/*`
+The twine tool is used to upload the package to PyPI.
+Once the distribution files are generated with the build tool, then upload them with: `python -m twine upload --repository testpypi dist/*`
 
 -----------------
 Restructured Text
