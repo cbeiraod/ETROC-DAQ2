@@ -7,29 +7,39 @@ A new and improved DAQ for standalone ETROC testing
 ====================
 Running the software
 ====================
-
-We will use a venv to isolate the ETROC-DAQ++ python installation and dependencies from that of the system and other venvs. Create the venv with: `python -m venv venv`. Venv creation only needs to be done once and occasional when you upgrade th epython version installed on the system.
+We will use a venv to isolate the ETROC-DAQ++ python installation and dependencies from that of the system and other venvs. Create the venv with: `python -m venv venv`. Venv creation only needs to be done once and occasionally when you upgrade the python version installed on the system.
 
 Before running any commands related to the DAQ, activate the venv with: `source venv/bin/activate`
 
 Once you are finished, you may deactivate the venv with: `deactivate`
 
-------------
-Dependencies
-------------
-Make sure you activate the venv first, then install this application with all its dependencies: `pip install .`
+---------------------------
+Dependencies & Installation
+---------------------------
+There are two options, you can run the ETROC-DAQ++ from source or from [PyPI](https://pypi.org/) (Recommended).
+
+From PyPI
+---------
+Make sure you activate the venv first, then simply run the command: `python -m pip install ETROC-DAQ2`
+
+From Source
+-----------
+Fetch the source from github, you may for instance clone the git repository to a local directory.
+Make sure the venv is activated, then install this application with all its dependencies by running this command from the source directory: `python -m pip install .`
 
 ----------------
 Dev Dependencies
 ----------------
-If you are working on developing the code for ETROC-DAQ++ you will need to follow the "Running the Software" instructions for setup and then instead of the install command in the "Dependencies" instructions, use the following command: `pip install -e .`.
+If you are working on developing the code for ETROC-DAQ++ you will need to follow the "Running the Software" instructions for setup and then for installing use the "From Source" instructions but instead of the install command in the "Dependencies" instructions, use the following command: `python -m pip install -e .`.
 Then install a few other dependencies which are only used in development:
 ```
 python -m pip install --upgrade pytest
 python -m pip install --upgrade bump2version
+python -m pip install --upgrade pylint
 python -m pip install --upgrade build
 python -m pip install --upgrade twine
 ```
+
 ========
 Dev Info
 ========
