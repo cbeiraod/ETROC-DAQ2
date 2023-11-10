@@ -50,9 +50,9 @@ Use the command `pytest` to run all the tests.
 
 We are using bump2version to manage the version string of the software.
 bump2version will automatically create a commit and a tag with the version when you use it:
-- To increase the major version, use: `bump2version major`; for example 0.1.3 to 1.0.0
-- To increase the minor version, use: `bump2version minor`; for example 0.1.3 to 0.2.0
-- To increase the patch version, use: `bump2version patch`; for example 0.1.3 to 0.1.4
+* To increase the major version, use: `bump2version major`; for example 0.1.3 to 1.0.0
+* To increase the minor version, use: `bump2version minor`; for example 0.1.3 to 0.2.0
+* To increase the patch version, use: `bump2version patch`; for example 0.1.3 to 0.1.4
 
 We are using pylint to check the style of python code.
 There is a github workflow which runs automatically on push, but you can also run it on your own with: `pylint [file]`.
