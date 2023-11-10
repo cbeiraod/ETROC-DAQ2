@@ -38,6 +38,7 @@ If you are working on developing the code for ETROC-DAQ++ you will need to follo
 Then install a few other dependencies which are only used in development:
 
 .. code::
+
   python -m pip install --upgrade pytest
   python -m pip install --upgrade bump2version
   python -m pip install --upgrade pylint
