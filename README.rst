@@ -13,6 +13,10 @@ A new and improved DAQ for standalone ETROC testing
 
 * Free software: Zlib license
 
+
+----------
+
+
 ====================
 Running the software
 ====================
@@ -51,6 +55,10 @@ Then install a few other dependencies which are only used in development:
   python -m pip install --upgrade pylint
   python -m pip install --upgrade build
   python -m pip install --upgrade twine
+
+
+------------
+
 
 ========
 Dev Info
