@@ -16,7 +16,7 @@ Once you are finished, you may deactivate the venv with: `deactivate`
 ---------------------------
 Dependencies & Installation
 ---------------------------
-There are two options, you can run the ETROC-DAQ++ from source or from [PyPI](https://pypi.org/) (Recommended).
+There are two options, you can run the ETROC-DAQ++ from source or from `PyPI <https://pypi.org/>` (Recommended).
 
 From PyPI
 ---------
