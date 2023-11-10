@@ -50,9 +50,9 @@ We are using bump2version to manage the version string of the software. bump2ver
   * To increase the minor version, use: `bump2version minor`; for example 0.1.3 to 0.2.0
   * To increase the patch version, use: `bump2version patch`; for example 0.1.3 to 0.1.4
 
-We are using pylint to check the style of python code. There is a github workflow which runs automatically on push, but you can also run it on your own with: ´pylint [file]´. A useful command is `pylint src` which will check the full distribution.
+We are using pylint to check the style of python code. There is a github workflow which runs automatically on push, but you can also run it on your own with: `pylint [file]`. A useful command is `pylint src` which will check the full distribution.
 
-The build tool is used to package the code for publishing on PyPI. Build the release with `python -m build`
+The build tool is used to package the code for publishing on PyPI. Build the release with: `python -m build`
 
 The twine tool is used to upload the package to PyPI. Once the distribution files are generated with the build tool, then upload them with: `python -m twine upload --repository testpypi dist/*`
 
