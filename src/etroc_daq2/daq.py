@@ -28,6 +28,7 @@ Contains the DAQ class, which serves as the entry point for the DAQ process.
 
 from etroc_daq2 import __version__
 
+
 class DAQ:
     """Class to handle the DAQ
 

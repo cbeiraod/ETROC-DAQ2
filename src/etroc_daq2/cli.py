@@ -29,6 +29,7 @@ CLI -> Command Line Interface
 
 import argparse
 
+
 def main(args=None):
     """This is the main entry function for the command line interface"""
     parser = argparse.ArgumentParser(description='Run the ETROC DAQ++')
