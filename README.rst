@@ -55,6 +55,7 @@ Then install a few other dependencies which are only used in development:
 
   python -m pip install --upgrade pytest
   python -m pip install --upgrade bump2version
+  python -m pip install --upgrade flake8-pyproject
   python -m pip install --upgrade black
   python -m pip install --upgrade build
   python -m pip install --upgrade twine
@@ -82,6 +83,12 @@ To run black standalone use: ``black .`` in the root directory.
 You may also use ``black --check -v .`` to get a list of which changes would be made, without actually making them.
 More information on black can be found `here <https://pypi.org/project/black/>`_.
 
+We are using flake8 to check the code for style and syntax errors (i.e. a linter tool).
+The flake8-pyproject enables flake8 to read configuration from the pyproject.toml file, and pulls flake8 as a dependency.
+This is why flake8 is not explicitly installed.
+To run flake8 standalone, use: ``flake8`` in the root directory.
+More information on flake8 can be found `here <https://flake8.pycqa.org/en/latest/index.html#quickstart>`_.
+A list of all options and configuration for the toml file can be found `here <https://flake8.pycqa.org/en/latest/user/options.html>`_.
 
 The build tool is used to package the code for publishing on PyPI.
 Build the release with: ``python -m build``
