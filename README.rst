@@ -62,8 +62,8 @@ Then install a few other dependencies which are only used in development:
 
   python -m pip install --upgrade pytest
   python -m pip install --upgrade bump2version
-  python -m pip install --upgrade flake8-pyproject
   python -m pip install --upgrade black
+  python -m pip install --upgrade flake8-pyproject
   python -m pip install --upgrade build
   python -m pip install --upgrade twine
 
@@ -74,10 +74,19 @@ Then install a few other dependencies which are only used in development:
 ========
 Dev Info
 ========
+
+-----
+Tools
+-----
+
+pytest
+======
 We are using pytest to run unit tests on the software.
 See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started.
 Use the command ``pytest`` to run all the tests.
 
+bump2version
+============
 We are using bump2version to manage the version string of the software.
 bump2version will automatically create a commit and a tag with the version when you use it:
 
@@ -85,11 +94,15 @@ bump2version will automatically create a commit and a tag with the version when 
 - To increase the minor version, use: ``bump2version minor``; for example 0.1.3 to 0.2.0
 - To increase the patch version, use: ``bump2version patch``; for example 0.1.3 to 0.1.4
 
+black
+=====
 We are using black to automatically format the python code.
 To run black standalone use: ``black .`` in the root directory.
 You may also use ``black --check -v .`` to get a list of which changes would be made, without actually making them.
 More information on black can be found `here <https://pypi.org/project/black/>`_.
 
+flake8
+======
 We are using flake8 to check the code for style and syntax errors (i.e. a linter tool).
 The flake8-pyproject enables flake8 to read configuration from the pyproject.toml file, and pulls flake8 as a dependency.
 This is why flake8 is not explicitly installed.
@@ -97,9 +110,13 @@ To run flake8 standalone, use: ``flake8`` in the root directory.
 More information on flake8 can be found `here <https://flake8.pycqa.org/en/latest/index.html#quickstart>`_.
 A list of all options and configuration for the toml file can be found `here <https://flake8.pycqa.org/en/latest/user/options.html>`_.
 
+build
+=====
 The build tool is used to package the code for publishing on PyPI.
 Build the release with: ``python -m build``
 
+twine
+=====
 The twine tool is used to upload the package to PyPI.
 Once the distribution files are generated with the build tool, then upload them with: ``python -m twine upload --repository testpypi dist/*``
 
