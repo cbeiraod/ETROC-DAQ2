@@ -69,7 +69,7 @@ Dev Info
 ========
 We are using pytest to run unit tests on the software.
 See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started.
-Use the command `pytest` to run all the tests.
+Use the command ``pytest`` to run all the tests.
 
 We are using bump2version to manage the version string of the software.
 bump2version will automatically create a commit and a tag with the version when you use it:
