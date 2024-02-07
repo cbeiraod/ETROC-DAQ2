@@ -4,6 +4,9 @@ ETROC-DAQ++
 
 .. start-badges
 
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
 .. list-table::
     :stub-columns: 1
 
@@ -52,7 +55,7 @@ Then install a few other dependencies which are only used in development:
 
   python -m pip install --upgrade pytest
   python -m pip install --upgrade bump2version
-  python -m pip install --upgrade pylint
+  python -m pip install --upgrade black
   python -m pip install --upgrade build
   python -m pip install --upgrade twine
 
@@ -74,9 +77,11 @@ bump2version will automatically create a commit and a tag with the version when 
 - To increase the minor version, use: ``bump2version minor``; for example 0.1.3 to 0.2.0
 - To increase the patch version, use: ``bump2version patch``; for example 0.1.3 to 0.1.4
 
-We are using pylint to check the style of python code.
-There is a github workflow which runs automatically on push, but you can also run it on your own with: ``pylint [file]``.
-A useful command is ``pylint src`` which will check the full distribution.
+We are using black to automatically format the python code.
+To run black standalone use: ``black .`` in the root directory.
+You may also use ``black --check -v .`` to get a list of which changes would be made, without actually making them.
+More information on black can be found `here <https://pypi.org/project/black/>`_.
+
 
 The build tool is used to package the code for publishing on PyPI.
 Build the release with: ``python -m build``
