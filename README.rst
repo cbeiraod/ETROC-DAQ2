@@ -20,6 +20,13 @@ A new and improved DAQ for standalone ETROC testing
 ----------
 
 
+.. contents:: Table of Contents
+   :depth: 3
+
+
+----------
+
+
 ====================
 Running the software
 ====================
