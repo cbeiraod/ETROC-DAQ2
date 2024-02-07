@@ -52,9 +52,9 @@ From Source
 Fetch the source from github, you may for instance clone the git repository to a local directory.
 Make sure the venv is activated, then install this application with all its dependencies by running this command from the source directory: ``python -m pip install .``
 
-----------------
-Dev Dependencies
-----------------
+----------------------
+Developer Dependencies
+----------------------
 If you are working on developing the code for ETROC-DAQ++ you will need to follow the "Running the Software" instructions for setup and then for installing use the "From Source" instructions but instead of the install command in the "Dependencies" instructions, use the following command: ``python -m pip install -e .``.
 Then install a few other dependencies which are only used in development:
 
@@ -71,22 +71,22 @@ Then install a few other dependencies which are only used in development:
 ------------
 
 
-========
-Dev Info
-========
+==============
+Developer Info
+==============
 
 -----
 Tools
 -----
 
 pytest
-======
+------
 We are using pytest to run unit tests on the software.
 See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started.
 Use the command ``pytest`` to run all the tests.
 
 bump2version
-============
+------------
 We are using bump2version to manage the version string of the software.
 bump2version will automatically create a commit and a tag with the version when you use it:
 
@@ -95,14 +95,14 @@ bump2version will automatically create a commit and a tag with the version when 
 - To increase the patch version, use: ``bump2version patch``; for example 0.1.3 to 0.1.4
 
 black
-=====
+-----
 We are using black to automatically format the python code.
 To run black standalone use: ``black .`` in the root directory.
 You may also use ``black --check -v .`` to get a list of which changes would be made, without actually making them.
 More information on black can be found `here <https://pypi.org/project/black/>`_.
 
 flake8
-======
+------
 We are using flake8 to check the code for style and syntax errors (i.e. a linter tool).
 The flake8-pyproject enables flake8 to read configuration from the pyproject.toml file, and pulls flake8 as a dependency.
 This is why flake8 is not explicitly installed.
@@ -111,12 +111,12 @@ More information on flake8 can be found `here <https://flake8.pycqa.org/en/lates
 A list of all options and configuration for the toml file can be found `here <https://flake8.pycqa.org/en/latest/user/options.html>`_.
 
 build
-=====
+-----
 The build tool is used to package the code for publishing on PyPI.
 Build the release with: ``python -m build``
 
 twine
-=====
+-----
 The twine tool is used to upload the package to PyPI.
 Once the distribution files are generated with the build tool, then upload them with: ``python -m twine upload --repository testpypi dist/*``
 
