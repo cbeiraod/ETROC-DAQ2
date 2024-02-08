@@ -4,7 +4,7 @@ ETROC-DAQ++
 
 .. start-badges
 
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+.. image:: https://img.shields.io/badge/code%20style-black-000000
     :target: https://github.com/psf/black
     :alt: black
 
