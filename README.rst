@@ -83,7 +83,7 @@ Then install a few other dependencies which are only used in development:
   python -m pip install --upgrade twine
 
 
-Then install the pre-commit hooks so that things are ran automatically before any commit is done: `pre-commit install`.
+Then install the pre-commit hooks so that things are ran automatically before any commit is done: ``pre-commit install``.
 
 
 ------------
