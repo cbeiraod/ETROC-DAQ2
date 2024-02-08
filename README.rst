@@ -64,12 +64,16 @@ Then install a few other dependencies which are only used in development:
 .. code:: bash
 
   python -m pip install --upgrade pytest
+  python -m pip install --upgrade pre-commit
   python -m pip install --upgrade bump2version
   python -m pip install --upgrade black
   python -m pip install --upgrade flake8-pyproject
   python -m pip install --upgrade isort
   python -m pip install --upgrade build
   python -m pip install --upgrade twine
+
+
+Then install the pre-commit hooks so that things are ran automatically before any commit is done: `pre-commit install`.
 
 
 ------------
@@ -88,6 +92,14 @@ pytest
 We are using pytest to run unit tests on the software.
 See `here <https://docs.pytest.org/en/7.4.x/getting-started.html>`_ for ideas on how to get started.
 Use the command ``pytest`` to run all the tests.
+
+pre-commit
+----------
+**pre-commit may need to be installed in the global python environment for things to work correctly.**
+This tool allows to setup hooks into the git workflow, in particular for the Pre-Commit Hook, allowing to run automated tests before committing code.
+This functionality is used to automatically run black, flake8 and isort before any commit is made, thus guaranteeing a consistent style and formatting for all committed code (according to these tools).
+If you want to run all the checks individually as if a commit were about to be made, you can use ``pre-commit run --all-files``.
+You can find more information on pre-commit `here <https://pre-commit.com/>`_.
 
 bump2version
 ------------
