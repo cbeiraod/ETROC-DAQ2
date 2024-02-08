@@ -22,6 +22,9 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 keywords = ["ETROC", "DAQ", "Awesome"]
+dependencies = [
+    "usb_iss >= 2.0.1",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/cbeiraod/ETROC-DAQ2"
