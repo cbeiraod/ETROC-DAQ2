@@ -26,5 +26,9 @@ from __future__ import annotations
 __version__ = '0.0.0'
 
 from .daq import DAQ
+from .fpga_legacy import LegacyFPGA
 
-__all__ = ["DAQ"]
+__all__ = [
+    "DAQ",
+    "LegacyFPGA",
+]
