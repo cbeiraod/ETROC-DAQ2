@@ -7,6 +7,9 @@ ETROC-DAQ++
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github.com/psf/black
 
+.. image:: https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336
+    :target: https://pycqa.github.io/isort/
+
 .. list-table::
     :stub-columns: 1
 
@@ -64,6 +67,7 @@ Then install a few other dependencies which are only used in development:
   python -m pip install --upgrade bump2version
   python -m pip install --upgrade black
   python -m pip install --upgrade flake8-pyproject
+  python -m pip install --upgrade isort
   python -m pip install --upgrade build
   python -m pip install --upgrade twine
 
@@ -109,6 +113,12 @@ This is why flake8 is not explicitly installed.
 To run flake8 standalone, use: ``flake8`` in the root directory.
 More information on flake8 can be found `here <https://flake8.pycqa.org/en/latest/index.html#quickstart>`_.
 A list of all options and configuration for the toml file can be found `here <https://flake8.pycqa.org/en/latest/user/options.html>`_.
+
+isort
+-----
+We are using isort to automatically sort the include statements at the top of the python files.
+To run isort standalone use: ``isort .`` in the root directory.
+More information on isort can be found `here <https://pycqa.github.io/isort/>`_.
 
 build
 -----

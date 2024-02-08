@@ -39,7 +39,7 @@ addopts = [
 line-length = 140
 target-version = ["py38", "py39", "py310", "py311"]
 skip-string-normalization = true
-required-version = 23
+required-version = 24
 extend-exclude = '''
 # A regex preceded with ^/ will apply only to files and directories
 # in the root of the project.
@@ -63,3 +63,12 @@ per-file-ignores = [
 max-line-length = 140
 max-complexity = 18
 count = true
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+line_length = 140
+known_first_party = ['etroc_daq2']
+default_section = 'THIRDPARTY'
+forced_separate = 'test_etroc_daq2'
+skip = ".pytest_cache,.git,.github,venv,build,dist"
