@@ -27,8 +27,10 @@ __version__ = '0.0.0'
 
 from .daq import DAQ
 from .fpga_legacy import LegacyFPGA
+from .usb_iss import UsbIssI2C
 
 __all__ = [
     "DAQ",
     "LegacyFPGA",
+    "UsbIssI2C",
 ]
